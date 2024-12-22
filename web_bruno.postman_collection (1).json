@@ -1,0 +1,1132 @@
+{
+	"info": {
+		"_postman_id": "3fd82ba7-146a-4e35-9ec1-65c40dd93a1b",
+		"name": "web_bruno",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36351406"
+	},
+	"item": [
+		{
+			"name": "kartinka1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Проверка kartinka1 code 200\", function () {\r",
+							"  var testresult = Boolean(pm.response.to.have.status(200));\r",
+							"    console.log(JSON.stringify(testresult));\r",
+							"   pm.sendRequest('https://api.telegram.org/bot7714228247:AAHTaVnTbBfiQK9lxbEOxmMRXUVh0UJUPG8/sendMessage?chat_id=1289608729&text=Проверка kartinka1 code 200=' + ' ' + JSON.stringify(testresult));\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "cookie",
+						"value": "_ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "priority",
+						"value": "i"
+					},
+					{
+						"key": "referer",
+						"value": "https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "image"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "no-cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://brunoyam.com/storage/client/1.png",
+					"protocol": "https",
+					"host": [
+						"brunoyam",
+						"com"
+					],
+					"path": [
+						"storage",
+						"client",
+						"1.png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "kartinka1_1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Проверка kartinka1_1 code 200\", function () {\r",
+							"  var testresult = Boolean(pm.response.to.have.status(200));\r",
+							"    console.log(JSON.stringify(testresult));\r",
+							"   pm.sendRequest('https://api.telegram.org/bot7714228247:AAHTaVnTbBfiQK9lxbEOxmMRXUVh0UJUPG8/sendMessage?chat_id=1289608729&text=Проверка kartinka1_1 code 200=' + ' ' + JSON.stringify(testresult));\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "cookie",
+						"value": "_ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "priority",
+						"value": "i"
+					},
+					{
+						"key": "referer",
+						"value": "https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "image"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "no-cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://brunoyam.com/storage/client/color/1.png",
+					"protocol": "https",
+					"host": [
+						"brunoyam",
+						"com"
+					],
+					"path": [
+						"storage",
+						"client",
+						"color",
+						"1.png"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://brunoyam.com/storage/client/color/1.png' \\\r\n  -H 'accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8' \\\r\n  -H 'accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -H 'cookie: _ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: i' \\\r\n  -H 'referer: https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: image' \\\r\n  -H 'sec-fetch-mode: no-cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "kartinka2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Проверка kartinka2 code 200\", function () {\r",
+							"  var testresult = Boolean(pm.response.to.have.status(200));\r",
+							"    console.log(JSON.stringify(testresult));\r",
+							"   pm.sendRequest('https://api.telegram.org/bot7714228247:AAHTaVnTbBfiQK9lxbEOxmMRXUVh0UJUPG8/sendMessage?chat_id=1289608729&text=Проверка kartinka2 code 200=' + ' ' + JSON.stringify(testresult));\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "cookie",
+						"value": "_ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "priority",
+						"value": "i"
+					},
+					{
+						"key": "referer",
+						"value": "https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "image"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "no-cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://brunoyam.com/storage/client/2.png",
+					"protocol": "https",
+					"host": [
+						"brunoyam",
+						"com"
+					],
+					"path": [
+						"storage",
+						"client",
+						"2.png"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://brunoyam.com/storage/client/2.png' \\\r\n  -H 'accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8' \\\r\n  -H 'accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -H 'cookie: _ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: i' \\\r\n  -H 'referer: https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: image' \\\r\n  -H 'sec-fetch-mode: no-cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "kartinka2_2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Проверка kartinka2_2 code 200\", function () {\r",
+							"  var testresult = Boolean(pm.response.to.have.status(200));\r",
+							"    console.log(JSON.stringify(testresult));\r",
+							"   pm.sendRequest('https://api.telegram.org/bot7714228247:AAHTaVnTbBfiQK9lxbEOxmMRXUVh0UJUPG8/sendMessage?chat_id=1289608729&text=Проверка kartinka2_2 code 200=' + ' ' + JSON.stringify(testresult));\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "cookie",
+						"value": "_ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "priority",
+						"value": "i"
+					},
+					{
+						"key": "referer",
+						"value": "https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "image"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "no-cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://brunoyam.com/storage/client/color/2.png",
+					"protocol": "https",
+					"host": [
+						"brunoyam",
+						"com"
+					],
+					"path": [
+						"storage",
+						"client",
+						"color",
+						"2.png"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://brunoyam.com/storage/client/color/2.png' \\\r\n  -H 'accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8' \\\r\n  -H 'accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -H 'cookie: _ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: i' \\\r\n  -H 'referer: https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: image' \\\r\n  -H 'sec-fetch-mode: no-cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "kartinka3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Проверка kartinka3 code 200\", function () {\r",
+							"  var testresult = Boolean(pm.response.to.have.status(200));\r",
+							"    console.log(JSON.stringify(testresult));\r",
+							"   pm.sendRequest('https://api.telegram.org/bot7714228247:AAHTaVnTbBfiQK9lxbEOxmMRXUVh0UJUPG8/sendMessage?chat_id=1289608729&text=Проверка kartinka3 code 200=' + ' ' + JSON.stringify(testresult));\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "cookie",
+						"value": "_ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "priority",
+						"value": "i"
+					},
+					{
+						"key": "referer",
+						"value": "https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "image"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "no-cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://brunoyam.com/storage/client/3.png",
+					"protocol": "https",
+					"host": [
+						"brunoyam",
+						"com"
+					],
+					"path": [
+						"storage",
+						"client",
+						"3.png"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://brunoyam.com/storage/client/3.png' \\\r\n  -H 'accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8' \\\r\n  -H 'accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -H 'cookie: _ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: i' \\\r\n  -H 'referer: https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: image' \\\r\n  -H 'sec-fetch-mode: no-cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "kartinka3_3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Проверка kartinka3_3 code 200\", function () {\r",
+							"  var testresult = Boolean(pm.response.to.have.status(200));\r",
+							"    console.log(JSON.stringify(testresult));\r",
+							"   pm.sendRequest('https://api.telegram.org/bot7714228247:AAHTaVnTbBfiQK9lxbEOxmMRXUVh0UJUPG8/sendMessage?chat_id=1289608729&text=Проверка kartinka3_3 code 200=' + ' ' + JSON.stringify(testresult));\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "cookie",
+						"value": "_ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "priority",
+						"value": "i"
+					},
+					{
+						"key": "referer",
+						"value": "https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "image"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "no-cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://brunoyam.com/storage/client/color/3.png",
+					"protocol": "https",
+					"host": [
+						"brunoyam",
+						"com"
+					],
+					"path": [
+						"storage",
+						"client",
+						"color",
+						"3.png"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://brunoyam.com/storage/client/color/3.png' \\\r\n  -H 'accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8' \\\r\n  -H 'accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -H 'cookie: _ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: i' \\\r\n  -H 'referer: https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: image' \\\r\n  -H 'sec-fetch-mode: no-cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "kartinka4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Проверка kartinka4 code 200\", function () {\r",
+							"  var testresult = Boolean(pm.response.to.have.status(200));\r",
+							"    console.log(JSON.stringify(testresult));\r",
+							"   pm.sendRequest('https://api.telegram.org/bot7714228247:AAHTaVnTbBfiQK9lxbEOxmMRXUVh0UJUPG8/sendMessage?chat_id=1289608729&text=Проверка kartinka4 code 200=' + ' ' + JSON.stringify(testresult));\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "cookie",
+						"value": "_ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "priority",
+						"value": "i"
+					},
+					{
+						"key": "referer",
+						"value": "https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "image"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "no-cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://brunoyam.com/storage/client/4.png",
+					"protocol": "https",
+					"host": [
+						"brunoyam",
+						"com"
+					],
+					"path": [
+						"storage",
+						"client",
+						"4.png"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://brunoyam.com/storage/client/4.png' \\\r\n  -H 'accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8' \\\r\n  -H 'accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -H 'cookie: _ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: i' \\\r\n  -H 'referer: https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: image' \\\r\n  -H 'sec-fetch-mode: no-cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "kartinka4_4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Проверка kartinka4_4 code 200\", function () {\r",
+							"  var testresult = Boolean(pm.response.to.have.status(200));\r",
+							"    console.log(JSON.stringify(testresult));\r",
+							"   pm.sendRequest('https://api.telegram.org/bot7714228247:AAHTaVnTbBfiQK9lxbEOxmMRXUVh0UJUPG8/sendMessage?chat_id=1289608729&text=Проверка kartinka4_4 code 200=' + ' ' + JSON.stringify(testresult));\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "cookie",
+						"value": "_ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "priority",
+						"value": "i"
+					},
+					{
+						"key": "referer",
+						"value": "https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "image"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "no-cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://brunoyam.com/storage/client/color/4.png",
+					"protocol": "https",
+					"host": [
+						"brunoyam",
+						"com"
+					],
+					"path": [
+						"storage",
+						"client",
+						"color",
+						"4.png"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://brunoyam.com/storage/client/color/4.png' \\\r\n  -H 'accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8' \\\r\n  -H 'accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -H 'cookie: _ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: i' \\\r\n  -H 'referer: https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: image' \\\r\n  -H 'sec-fetch-mode: no-cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "kartinka5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Проверка kartinka5 code 200\", function () {\r",
+							"  var testresult = Boolean(pm.response.to.have.status(200));\r",
+							"    console.log(JSON.stringify(testresult));\r",
+							"   pm.sendRequest('https://api.telegram.org/bot7714228247:AAHTaVnTbBfiQK9lxbEOxmMRXUVh0UJUPG8/sendMessage?chat_id=1289608729&text=Проверка kartinka5 code 200=' + ' ' + JSON.stringify(testresult));\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "cookie",
+						"value": "_ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "priority",
+						"value": "i"
+					},
+					{
+						"key": "referer",
+						"value": "https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "image"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "no-cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://brunoyam.com/storage/client/5.png",
+					"protocol": "https",
+					"host": [
+						"brunoyam",
+						"com"
+					],
+					"path": [
+						"storage",
+						"client",
+						"5.png"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://brunoyam.com/storage/client/5.png' \\\r\n  -H 'accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8' \\\r\n  -H 'accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -H 'cookie: _ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: i' \\\r\n  -H 'referer: https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: image' \\\r\n  -H 'sec-fetch-mode: no-cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "kartinka5_5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Проверка kartinka5_5 code 200\", function () {\r",
+							"  var testresult = Boolean(pm.response.to.have.status(200));\r",
+							"    console.log(JSON.stringify(testresult));\r",
+							"   pm.sendRequest('https://api.telegram.org/bot7714228247:AAHTaVnTbBfiQK9lxbEOxmMRXUVh0UJUPG8/sendMessage?chat_id=1289608729&text=Проверка kartinka5_5 code 200=' + ' ' + JSON.stringify(testresult));\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "cookie",
+						"value": "_ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "priority",
+						"value": "i"
+					},
+					{
+						"key": "referer",
+						"value": "https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "image"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "no-cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+					}
+				],
+				"url": {
+					"raw": "https://brunoyam.com/storage/client/color/5.png",
+					"protocol": "https",
+					"host": [
+						"brunoyam",
+						"com"
+					],
+					"path": [
+						"storage",
+						"client",
+						"color",
+						"5.png"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://brunoyam.com/storage/client/color/5.png' \\\r\n  -H 'accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8' \\\r\n  -H 'accept-language: ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7,uz;q=0.6' \\\r\n  -H 'cache-control: no-cache' \\\r\n  -H 'cookie: _ym_uid=1677927126386919672; carrotquest_uid=1621681129570437436; carrotquest_auth_token=user.1621681129570437436.32023-d7bee31880058a18ef0efe6784.c7340fa173cac4c92537da638c59c783bdffe0618f793b26; carrotquest_device_guid=bc135104-4aca-49ce-a883-9f3bccc84f5f; sbjs_migrations=1418474375998%3D1; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_session_id=594851c2-c828-cd06-fee3-2f75febe7675; analytic_id=1729948426715677; _ym_d=1729948430; click_id=aMNZ22Vy46Zf678; partner=cityads; sbjs_first_add=fd%3D2024-10-26%2016%3A22%3A46%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%3Futm_source%3Dcityads%26utm_medium%3Dcpa%26utm_campaign%3D4xui%26click_id%3DaMNZ22Vy46Zf678%7C%7C%7Crf%3Dhttps%3A%2F%2Fstvkr.com%2F; advcake_track_id=4db5041a-7b3f-9eb2-6b36-1f3d0a0cf0e7; advcake_utm_partner=4xui; advcake_utm_webmaster=; advcake_click_id=; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_current_add=fd%3D2024-11-24%2016%3A02%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_udata=vst%3D10%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F131.0.0.0%20Safari%2F537.36; _gid=GA1.2.427366858.1732453365; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzI0NTY5NjUsImlhdCI6MTczMjQ1MzM2NSwianRpIjoiYzU5YTU2YWI5YzZhNGVmMTg3ZmJjN2ZiMjRkYTE5MzAiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMjQ1MzM2NSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE2MjE2ODExMjk1NzA0Mzc0MzYiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTYyMTY4MTEyOTU3MDQzNzQzNn0.nKO3geVgzC8aq5U9-RuJfdiVsrEH-FlN-zO4G4WXG_o; _ym_isad=2; _ym_visorc=w; sbjs_session=pgs%3D16%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Ftestirovsshik-qa; _ga=GA1.2.1203795479.1677927127; advcake_track_url=%3D20241118rn63Q2moqwHYb6LHyokNEr7OAymJ%2Fh%2BBI9mbvd%2FvTPYEScgHGkHsfZILBf3%2B%2BjLx2PQBqk2D1lubPsjiZ57WXKmCP5%2BtUIz0PbwASqxnJcF5zpmuAZEzrKFmZNZ8ALdew%2FVUtak%2B9ACWzTkjDqu0kFdLzCwqLXC7aZtCq1VqUrRL03IMEfRHAXND6erKimMjCPbMIGhdHpf1N3%2F12gr82FVzxG7aq6LPhvDdzMrVfXbK%2BRJTQibM3oCyGbWQOmFH9zcBOzZGO0ZtE2xoBCKWQsGv7AlVx7nzWzfkaamOMX%2FBGynxC8yLwFkCF8tKdvRiQrZ79ER1dPovGQM%2B8Sqv8UYapI2FVJ8S9VAcKn2%2FYvMncm6E3RyJ8fO4Ze9E2WHU%2FfQFegEUzoob%2FhoXjRJk3SeDW%2BfhS62y4PjcAcxr3fjYyUs509H2FpdTrlFxQnsSN2FPd5Pk9hX9D4eGQnOv3vH56KdiXdfokRGaXtGSr1bzetRESSWJMvsvdkDkhtYldiNYmsTa1PUcNjVosXxDNry0OT9iQFWSftscelR9LYHvQwp2808e1N2yWaF7Flt9bJhjoFWDWUIrSwcnYPv8iUUEvgkGRW%2B%2F29kPH59uq4VoFQGiJPBfg1Ampl5TvzK76FukmdkpjkhKJUHTQ6DosLBEVc0RmANQdJmZC84yI8ge64xVzD8GaF4%3D; carrotquest_session=m5qb49nxee7ah2i0kzx0gb3q6zpqn9g7; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IlpxQ3l2Z0h5UjZCSThxV0RBVW9UUlE9PSIsInZhbHVlIjoiaExsdHNDOHdZek9XWGhSNXljM2h6citpcDRkcStKS0Q5REVxRGRxM2RLUkgzV2E3TmlYdlVxRU4xQkJSVVJMM2VYVGpVN2kydkdNeHVsdldGVDZackFycjJ3d2FJbk13MFpaT2RTcG1IYkkrR3JQcmZiWVpZT2tYdzExTlN3SWgiLCJtYWMiOiIwNTFiZmVlMmYyMzcwYWM2NDQyMzg1YjUwOTAyZWUwYzdiNWNhZDdiYTE5ZThjY2I4NTc5OWQxZDkxYTI5Y2RlIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6Im94MUltOG4xM05CRkh3V2k1cDVHb2c9PSIsInZhbHVlIjoiQlRjdVh5OURmeEdIaXVRS0FJK1MvUDdRWXdheDF3cmpTakFQK1pML2k4VHZKVGI5VHdTMlJNa3h5RlRmZVdzc3ZSTEdTVzN2SHNpU2xPbGJHTldNY2paRzNHdW1jVWVweVBrZlhvQjF3U2M3T3g3OXpnVnJ5dXZ1TURhNWphSU0iLCJtYWMiOiI4ZDVkZWUxMGY5NzIyMDVkNzQ5ZDZiZmI3MTNlOGNkYTRhNDg4M2ZhMjFjMTc2YmUyMzllNjFiOGFlNDdkZmFkIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1732453364.14.1.1732453426.60.0.0' \\\r\n  -H 'pragma: no-cache' \\\r\n  -H 'priority: i' \\\r\n  -H 'referer: https://brunoyam.com/kursy-programmirovaniya/qa-testirovsshik-s-nulya' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: image' \\\r\n  -H 'sec-fetch-mode: no-cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://brunoyam.com/api/current_course?course_id=91",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Response time is less than 1500ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(1500);",
+							"});",
+							"",
+							"pm.test(\"Проверка поля lang\", function () {",
+							"var x = 'ru';",
+							"var jsonData = pm.response.json();",
+							"var y = jsonData.course.lang;",
+							"pm.expect(x).to.equal(y);",
+							"});",
+							"",
+							"pm.test(\"Проверка поля id\", function () {",
+							"var name1 = 91;",
+							"var jsonData = pm.response.json();",
+							"var name2 = jsonData.course.id;",
+							"pm.expect(name1).to.equal(name2);",
+							"});",
+							"",
+							"pm.test(\"Проверка поля name_yml\", function () {",
+							"var name3 = 'Тестировщик ПО';",
+							"var jsonData = pm.response.json();",
+							"var name4 = jsonData.course.name_yml;",
+							"pm.expect(name3).to.equal(name4);",
+							"});",
+							"",
+							"pm.test(\"Проверка поля results_after_heading\", function () {",
+							"var name5 = 'мы провели аналитику вакансий и будем учить вас только тому, <span>что нужно для трудоустройства</span>';",
+							"var jsonData = pm.response.json();",
+							"var name6 = jsonData.course.settings.results_after_heading;",
+							"pm.expect(name5).to.equal(name6);",
+							"});",
+							"",
+							"pm.test(\"Проверка поля title\", function () {",
+							"var name7 = 'Исследовательское тестирование приложения';",
+							"var jsonData = pm.response.json();",
+							"var name8 = jsonData.course.projects[0].title;",
+							"pm.expect(name7).to.equal(name8);",
+							"});",
+							"",
+							"pm.test('Проверка параметра поля deadlinePrice', function () {",
+							"    var jsonData = pm.response.json();",
+							"    var urlName = jsonData.deadlinePrice;",
+							"    var goodname = '26 ноября';",
+							"    var testresult = Boolean(pm.expect(urlName).to.equal(goodname));",
+							"    console.log(JSON.stringify(testresult));",
+							"   pm.sendRequest('https://api.telegram.org/bot7714228247:AAHTaVnTbBfiQK9lxbEOxmMRXUVh0UJUPG8/sendMessage?chat_id=1289608729&text=Проверка параметра поля deadlinePrice=' + ' ' + JSON.stringify(testresult));",
+							"});",
+							"",
+							"pm.test(\"Проверка поля description\", function () {",
+							"var name9 = 'За 4 месяца получите необходимые навыки и знания для старта работы в профессии';",
+							"var jsonData = pm.response.json();",
+							"var name11 = jsonData.course.description;",
+							"pm.expect(name9).to.equal(name11);",
+							"});",
+							"",
+							"",
+							"pm.test('Проверка параметра поля description', function () {",
+							"    var jsonData = pm.response.json();",
+							"    var urlName = jsonData.course.description;",
+							"    var goodname = 'За 4 месяца получите необходимые навыки и знания для старта работы в профессии';",
+							"    var testresult = Boolean(pm.expect(urlName).to.equal(goodname));",
+							"    console.log(JSON.stringify(testresult));",
+							"   pm.sendRequest('https://api.telegram.org/bot7714228247:AAHTaVnTbBfiQK9lxbEOxmMRXUVh0UJUPG8/sendMessage?chat_id=1289608729&text=Проверка параметра поля description=' + ' ' + JSON.stringify(testresult));",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "cookie",
+						"value": "sbjs_migrations=1418474375998%3D1; sbjs_first_add=fd%3D2024-11-17%2014%3A53%3A17%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; sbjs_current=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; sbjs_first=typ%3Dorganic%7C%7C%7Csrc%3Dgoogle%7C%7C%7Cmdm%3Dorganic%7C%7C%7Ccmp%3D%28none%29%7C%7C%7Ccnt%3D%28none%29%7C%7C%7Ctrm%3D%28none%29; advcake_track_id=f252241d-6b37-6510-f0f6-5252b079de19; advcake_session_id=3b785add-9532-5803-ed22-935575071b8c; _gid=GA1.2.91883337.1731844399; analytic_id=1731844431957616; carrotquest_device_guid=57d2965c-3edc-4d28-aabd-fffddd76cca0; carrotquest_uid=1843282794411723358; carrotquest_auth_token=user.1843282794411723358.32023-d7bee31880058a18ef0efe6784.9f4546a3431c4536c62c99c0512bd9249a5da5f6adf4c3ae; _ym_uid=1731844433558236960; _ym_d=1731844433; _ym_isad=2; carrotquest_hide_all_unread_popups=true; sbjs_udata=vst%3D3%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Macintosh%3B%20Intel%20Mac%20OS%20X%2010_15_7%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F130.0.0.0%20Safari%2F537.36; carrotquest_realtime_services_transport=wss; carrotquest_jwt_access=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdHQiOiJhY2Nlc3MiLCJleHAiOjE3MzE4NTgxNTEsImlhdCI6MTczMTg1NDU1MSwianRpIjoiMzRiODhhNGFlZDI4NGQ4NGI0YjYyOGM4YmY5ODQ5M2QiLCJhY3QiOiJ3ZWJfdXNlciIsImN0cyI6MTczMTg1NDU1MSwicm9sZXMiOlsidXNlci4kYXBwX2lkOjMyMDIzLiR1c2VyX2lkOjE4NDMyODI3OTQ0MTE3MjMzNTgiXSwiYXBwX2lkIjozMjAyMywidXNlcl9pZCI6MTg0MzI4Mjc5NDQxMTcyMzM1OH0._6hXywKIpnn0EotCGCWyNBlzdapTDuH8S9MxNsnPeno; _ym_visorc=w; sbjs_current_add=fd%3D2024-11-17%2017%3A46%3A59%7C%7C%7Cep%3Dhttps%3A%2F%2Fbrunoyam.com%2F%7C%7C%7Crf%3Dhttps%3A%2F%2Fwww.google.com%2F; advcake_track_url=%3D20241111ngdX0cWB8V9ge5RkPxlpP2TAGKfS17pzNE7wHPo865tESe2JPtXGUjkoAQPeEqrnAfyeVsdCLKWgWkV9n7c%2FfsQZ5OYlmHd5TZNlnj7cX35cto48lEWRtRB8AE2iBMOw%2FOxIhEX1340ThLS71RRVrzYMBqVEa7l3Y%2BEgu%2BHCzTeEn0hXhC%2FHGmvL%2Bt56thkHsXJ5VcAXlxnsOMY7YA833vxq%2Fb6WTMIp7OAR4z%2FazE02XwRqXezLxzLFQSZdcLhvmCa4vgxh0tgaFawuyUViKnzOlP8lwEzdHAfuCs5cXbJLGnaMmOpe%2BU7GiQyMKjmflAx0rvu%2Bp8qbHSEGwNEXKue60kymz58%2BSMDwvRKe%2F5KAGkNYIexqKmRcV3aeaJMRH1deTmBWdI13UKG7nhkzzeMt1kRXZ0p%2BVvvPTSnOTdvNnfuQlpWAXVdIcgXBfDh5czxAbpWLvS29%2FX2ouNw0kZ0sjrPkXDRdknCmC9lm4KgZVrI7%2BZSgdh0f1ty6jEjADFtPkA5FZAE7sk5APYGYA7jpB2AR1FIxOtLQAfipPr8gcK%2FZKaKgdHF9Lqq3T996UdkPt6c6%2BFWaXw0AuaxBYOElQx6CRQmXFYCdaXrLiC9rYUiiB0H5eiOiZ4IvSUAWEDZOxkx48A1Qdbv4lMdAkKm3yR1irEiNBBxsSHueRJlfQVC4y7FEye4%3D; carrotquest_session=7amxso433bv0geu5d51sqapi1bq341i4; carrotquest_session_started=1; XSRF-TOKEN=eyJpdiI6IitvZDRYZGVWYnQzTDJWenRIUGNLMWc9PSIsInZhbHVlIjoiazNhY3k1bnFkK1BPSnJJN3I4THNBdUw1czFkWG56V0tlZlh2b2R5a1Q0VXh0ck9RTVQyM2FlMWdLSklZZExNQTNyeTAyeXV1ZUQzb3hGcmhwWEsyTUVJSzBXV3E1RFRTamtzT0c0eEhTNlFhcG0rREZCOFF4R0t0bjkzNktBdzkiLCJtYWMiOiI4ZGNlN2FkZDI4MGVhZDYxMDljZjgzNTUxODdiOGZkZjc4MGY5Nzg0ZWZmNzEyM2UxMTc5MDY2OTRlMTVlOWZiIiwidGFnIjoiIn0%3D; brunoyam_session=eyJpdiI6IlE5U1g1eXNWUzI5dkxIV3Z4aGZIQnc9PSIsInZhbHVlIjoiVHgrSExaT1VGVCt4U2ltNE16bTB6emxJaVpiejJ6NXFjVFd3NW5sVDh2ZlFlNXByVW9YRDdYM3JnbHNGVEZOVjh6ODV5RjJRS3hLMFVzR0tnOUJBM05rYytWRFhHQURzNitoVE51TFl0VEoxL3kvU3RQK3kzY1dCb1AwQzU1cXoiLCJtYWMiOiI3NTIyMTNmMjk3YmIyMzlkMjdhNDgxNjE3NjFjNWYzNjU0YWE1YjQ3NmZhOGYzYWIzZjBjNWMwYzM4YTA5ZmUzIiwidGFnIjoiIn0%3D; _ga_JJ5D9LHCRV=GS1.1.1731854292.3.1.1731854963.59.0.0; _ga=GA1.2.673810166.1731844399; _gat_gtag_UA_89592529_1=1; sbjs_session=pgs%3D65%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fbrunoyam.com%2Fonline-kursy%2Fqa"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://brunoyam.com/online-kursy/qa"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "x-csrf-token",
+						"value": "YG7qNuHZPk7ZfWj7euOsO1Iuwq0adGOlZykvyQQB"
+					},
+					{
+						"key": "x-requested-with",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "x-xsrf-token",
+						"value": "eyJpdiI6IitvZDRYZGVWYnQzTDJWenRIUGNLMWc9PSIsInZhbHVlIjoiazNhY3k1bnFkK1BPSnJJN3I4THNBdUw1czFkWG56V0tlZlh2b2R5a1Q0VXh0ck9RTVQyM2FlMWdLSklZZExNQTNyeTAyeXV1ZUQzb3hGcmhwWEsyTUVJSzBXV3E1RFRTamtzT0c0eEhTNlFhcG0rREZCOFF4R0t0bjkzNktBdzkiLCJtYWMiOiI4ZGNlN2FkZDI4MGVhZDYxMDljZjgzNTUxODdiOGZkZjc4MGY5Nzg0ZWZmNzEyM2UxMTc5MDY2OTRlMTVlOWZiIiwidGFnIjoiIn0="
+					}
+				],
+				"url": {
+					"raw": "https://brunoyam.com/api/current_course?course_id=91",
+					"protocol": "https",
+					"host": [
+						"brunoyam",
+						"com"
+					],
+					"path": [
+						"api",
+						"current_course"
+					],
+					"query": [
+						{
+							"key": "course_id",
+							"value": "91"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
